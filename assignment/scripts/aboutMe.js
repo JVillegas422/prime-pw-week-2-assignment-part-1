@@ -74,7 +74,25 @@ console.log(mostPets);
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
-
+let randomNumber = Math.floor(Math.random() * 4) + 1;
+// Used yourNumber since luckyNumber is already set as a variable up on question 5
+let yourNumber = ' ';
+switch (randomNumber) {
+    case 1:
+        yourNumber = 'First is the worse.';
+        break;
+    case 2:
+        yourNumber = 'Second is the best.';
+        break;
+    case 3:
+        yourNumber = 'Third is the one with the polka dot dress.';
+        break;
+    case 4: 
+        yourNumber = 'Luck is what happens when preparation meets opportunity.';
+        break;
+}
+console.log(yourNumber);
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
-
-
+// luckyNumber is already set as a variable on question 13, hence the reason I did not add the variable
+adventurous ? console.log('Adventures are great!') 
+: console.log('How about we stay home?');
